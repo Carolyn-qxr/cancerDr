@@ -1,0 +1,30 @@
+{
+    "pages": [
+        "pages/list/list",
+        "pages/report/report",
+        "pages/cancer_check/cancerCheck",
+        "pages/changeInfo/changeInfo",
+        "pages/selfDetect/selfDect",
+        "pages/userInfo/userInfo",
+        "pages/encyclopedia/encyclopedia",
+        "pages/history/history"
+    ],
+    "plugins": {
+        "paddlejs-plugin": {
+            "version": "2.0.1",
+            "provider": "wx7138a7bb793608c3"
+        }
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationStyle": "custom"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents",
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+        }
+    }
+}

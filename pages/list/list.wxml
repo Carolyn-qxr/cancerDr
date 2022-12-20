@@ -1,0 +1,61 @@
+<!--pages/list/list.wxml-->
+<view class="back">
+    <!-- <image src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/home.png?sign=5494fef9a8dc9095e6c47f812ca9e271&t=1650353122" class="home"></image> -->
+    <view class ="title"><text>癌症检测助手</text></view>
+    <scroll-view>
+    <image src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E5%96%87%E5%8F%AD.png?sign=1befb5bf663aaea45b526d9196b1273f&t=1650354380" style="position:absolute;width: 30px;height: 30px;left: 15px"></image>
+    <view class="scrolltxt">
+    <view class="marquee_box">
+      <view class="marquee_text" style="transform: translateX(-{{marqueeDistance}}px)">
+      <text>{{text}}</text>
+      <text style="margin-right:{{marquee_margin}}px;"></text>
+      <text style="margin-right:{{marquee_margin}}px;">{{text}}</text>  
+      </view>
+    </view>
+  </view>
+  <!--用户信息-->
+  <view class="userInfo">
+    <block wx:if="{{!isLogin}}">
+        <image class="touxiang" src="{{default_avatar}}"></image>
+        <text class="username">未登录</text>
+        <button class="getTel" size="mini" bindtap="login" >授权登录</button>
+    </block>
+    <block wx:else>
+        <image class="touxiang" src="{{avatar}}" mode="cover"></image>
+        <text class="username">{{nickName}}</text>
+        <button class="getTel" size="mini" bindtap="toUserInfo">个人信息</button>
+    </block>
+    
+    
+  </view>
+</scroll-view>
+
+</view>
+<!-- 放置图标 -->
+
+<view class="body">
+    <image src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E5%81%A5%E5%BA%B7.png?sign=2121559ae55f6b2bd8693755028a4614&t=1650425336" style="position: absolute;width: 25px;height: 25px;margin-left: 118px;margin-top: 2.5px;"></image>
+    <text  style="position: absolute;margin-left: 150px;color: #303133;margin-top: 3px;">您的健康医生</text>
+    <view class="body-top">
+        <view class="body-item" bindtap="jump">
+        <text class="body-text">前往癌症\n检测</text><image class="body-image" src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E7%96%BE%E7%97%85.png?sign=9c30c4a51a71ac8f16c9dee745573078&t=1650353201"></image></view>
+        <view class="body-item" bindtap="toHistory"><text class="body-text">历史检测\n记录</text>
+            <image class="body-image" src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95.png?sign=7b83aac9219f7a0e808462bc765482f0&t=1650353267"></image></view>
+        <view class="body-item" bindtap="toJiance">
+        <text class="body-text">个人健康\n监测</text>
+            <image class="body-image" src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E7%9B%91%E6%B5%8B.png?sign=40dd1549c499a000f2772d06f9efcc81&t=1650353291"></image></view>
+        <view class="body-item" bindtap="toBaike"><text class="body-text">癌症知识\n普及</text>
+            <image class="body-image" src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E7%96%BE%E7%97%85%E7%99%BE%E7%A7%91.png?sign=67217434acd1d4c500008fb32086fc7b&t=1650353217"></image></view>
+    </view>
+<!--底部轮播图-->
+<view class="carousel">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" 
+    interval="{{interval}}" duration="{{duration}}" class="swiper">
+    <swiper-item wx:for="{{imgUrls}}" >
+            <image src="{{item}}" class="slide-image"></image>
+    </swiper-item>
+    </swiper>
+</view>
+</view>
+<image src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E4%BD%9C%E8%80%85.png?sign=f9abeb4f95d142a4725bb4edd10ad643&t=1651831583" class="author"></image>
+<text class="author-text">by qxr</text>

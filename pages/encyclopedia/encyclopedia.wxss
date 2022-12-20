@@ -1,0 +1,270 @@
+/* pages/encyclopedia/encyclopedia.wxss */
+.title{
+  position: absolute;
+  background-image: linear-gradient(45deg, #9bd1d0 0%, #41dd8a 100%);
+  width: 100%;
+  height: 11%;
+}
+.titleText{
+  position: absolute;
+  margin-top:46px;
+  left:50px;
+  color: white;
+  font-size: 16.5px;
+  font-weight: 550;
+}
+.home{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-top: 41px;
+  margin-left: 20px;
+}
+
+.body{
+  position: absolute;
+  background-color:#F5F5F5;
+  width: 100%;
+  margin-top: 80px;
+  height: 1500px;
+  overflow-x: hidden;
+}
+.doctor{
+  width: 24px;
+  height: 26px;
+  position: absolute;
+  margin-left: 20%;
+  margin-top: 14px;
+}
+.btn-container{
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+  left: 24%;
+  text-align: center;
+  line-height: 26px;
+  display: flex;
+  flex-direction: row;
+}
+.btn{
+  width: 95px;
+  height: 30px;
+  color: #2a2a2b;
+  border-radius: 13px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #DCDFE6;
+  margin-left: 2px;
+  font-weight: 600;
+}
+.active{
+  color: #3bc97d;
+}
+.fontColorBox,
+.fontColorBox1 {
+    /* 文字默认颜色 */
+    color: #3bc97d;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.navBox {
+    /* 顶部tab盒子样式 */
+    width: 50%;
+    height: 108rpx;
+    display: flex;
+    margin-left: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBox view:last-child {
+    /* 最后一个tab标题的样式 */
+    padding-left: 20%;
+}
+
+.titleBox {
+    /* 未选中文字的样式 */
+    color: #303133;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lineBox,.notLineBox{
+    /* 选中及未选中底线共同样式 */
+    width: 32rpx;
+    height: 8rpx;
+}
+
+.lineBox {
+    /* 选中底线样式 */
+    background: rgb(43, 44, 45);
+    margin-top: 16rpx;
+    border-radius: 4rpx;
+}
+
+.notLineBox {
+    /* 未选中底线样式 */
+    background: transparent;
+}
+
+.swiperTtemBox {
+    /* 底部内容样式 */
+    height: 570px;
+    background: white;
+    border-radius: 30px;
+}
+.shuxian{
+  position: absolute;
+  width: 5px;
+  height: 25px;
+  margin-left: 7%;
+  margin-top: 3%;
+  background-color: #7ce4ac;
+}
+.title-text{
+  position: absolute;
+  left: 11%;
+  font-size: 19px;
+  margin-top: 3%;
+  font-weight: 600;
+  color: #434344;
+}
+.cancer-text{
+  position: absolute;
+  width: 88%;
+  margin-left: 6.5%;
+  margin-top: 50px;
+  line-height: 32px;
+  text-indent: 1em;
+}
+.cancerImg{
+  position: absolute;
+  margin-top: 320px;
+  margin-left: 5.5%;
+  width: 89%;
+  border-radius: 5px;
+}
+.author{
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 140px;
+  width: 20px;
+  height: 20px;
+}
+
+.author-text{
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 170px;
+  font-style: italic;
+  color: #303133;
+}
+.select_box{
+    background: #fff;
+    margin-left: 190px;
+    margin-top: 10px;
+    width: 130px;
+    position: relative;
+    z-index: 99;
+  }
+  .select{
+    width: 100%;
+    height: 70rpx;
+    border:1px solid #efefef;
+    border-radius: 8rpx;
+    display: flex;
+    align-items: center;
+    padding: 0 20rpx;
+    border-radius: 20px;
+  }
+.select_text{
+  position: absolute;
+  font-size: 16px;
+  color: #3bc97d;
+  font-weight: 530;
+  margin-left: 5px;
+}
+.select_img{
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  transition:transform 0.3s;
+  right: 10px;
+  margin-top: 4px;
+}
+.select_img_rotate{
+  transform:rotate(180deg); 
+}
+.option_box{
+  position: absolute;
+  top: 70rpx;
+  width: 100%;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+}
+.option{
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+  color: #3bc97d;
+  font-weight: 530;
+  margin-left: 10px;
+}
+.fenlei-text{
+  position: absolute;
+  width: 89%;
+  height: 500px;
+  margin-left: 6%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.detail-title{
+  left: 5%;
+  font-size: 16.5px;
+  margin-top: -50px;
+  font-weight: 600;
+  color: #666666;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.name-text{
+  position: absolute;
+  left: 30%;
+  color: #3bc97d;
+  font-size: 16px;
+  font-weight: 530;
+}
+.detail-text{
+  top: 30px;
+  line-height: 30px;
+}
+.cite{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 50px;
+  right: 140px;
+}
+.cite-text{
+  position: absolute;
+  width: 150px;
+  margin-top: 50px;
+  right: -20px;
+  color: #303133;
+}
+/* 隐藏滚动条*/
+::-webkit-scrollbar {
+    display:none;
+    width:0;
+    height:0;
+    color:transparent;
+  }

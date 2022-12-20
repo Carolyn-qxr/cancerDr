@@ -1,0 +1,62 @@
+<!--pages/encyclopedia/encyclopedia.wxml-->
+<view class="title">
+    <image src="{{homeSrc}}" class="home" bindtap="toHome"></image>
+    <text class="titleText">癌症检测历史</text>
+</view>
+<view class="body">
+    <image class="doctor" src="{{doctorSrc}}"></image>
+    
+    <!-- Tab布局 -->
+    <view class='navBox'>
+        <view class='titleBox' bindtap='titleClick' data-idx='0'>
+            <text class="{{0 == currentIndex ? 'fontColorBox' : ''}}">癌症简介</text>
+            <hr class="{{0 == currentIndex ? 'lineBox' : 'notLineBox'}}" />
+        </view>
+        <view class='titleBox' bindtap='titleClick' data-idx='1'>
+            <text class="{{1 == currentIndex ? 'fontColorBox1' : ''}}">癌症分类</text>
+            <hr class="{{1 == currentIndex ? 'lineBox' : 'notLineBox'}} " />
+        </view>
+    </view>
+    <!-- 内容布局 -->
+    <swiper class='swiperTtemBox' bindchange='pagechange' current='{{currentIndex}}'>
+        <swiper-item class='swiperTtemBox'>
+            <view class="shuxian"></view>
+            <view class="title-text">癌症(Cancer)</view>
+            <text class="cancer-text">在医学上，癌（cancer）是指起源于上皮组织的恶性肿瘤，是恶性肿瘤中最常见的一类。相对应的，起源于间叶组织的恶性肿瘤统称为肉瘤。有少数恶性肿瘤不按上述原则命名，如肾母细胞瘤、恶性畸胎瘤等。一般人们所说的“癌症”习惯上泛指所有恶性肿瘤。癌症具有细胞分化和增殖异常、生长失去控制、浸润性和转移性等生物学特征.</text>
+            <image src="{{cancerSrc}}" class="cancerImg"></image>
+        </swiper-item>
+        <swiper-item class='swiperTtemBox'>
+            <view class="shuxian"></view>
+            <view class="title-text">癌症分类</view>
+            <!-- 下拉框 -->
+            <view class='select_box'>
+                <view class='select' catchtap='selectTap'>
+                    <text class='select_text'>{{selectData[index]}}</text>
+                    <image class='select_img {{show&&"select_img_rotate"}}'></image>   
+                    <image class='select_img {{show&&"select_img_rotate"}}' src="{{xialaSrc}}"></image>             
+                </view>
+                <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+                    <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+                </view>
+               
+          </view>
+          <!-- 下拉框 -->
+            <scroll-view scroll-y="true" show-scrollbar="true" scroll-with-animation="true" class="fenlei-text">
+                <view class="detail-title">疾病名称:<text class="name-text">{{cancer_name}}</text></view>
+                <view class="detail-title">示例病理图：</view>
+                <image src="{{cancer_img}}"></image>
+                <view class="detail-title">疾病定义：</view>
+                <text class="detail-text">{{definition}}</text>
+                <view class="detail-title">临床表现：</view>
+                <text class="detail-text">{{manifestation}}</text>
+                <view class="detail-title">病因：</view>
+                <text class="detail-text">{{pathogenesis}}</text>
+                <image src="{{citeSrc}}" class="cite"></image>
+                <text class="cite-text">引用自百度百科</text>
+            </scroll-view> 
+        </swiper-item>
+        
+    </swiper>
+    <image src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E4%BD%9C%E8%80%85.png?sign=f9abeb4f95d142a4725bb4edd10ad643&t=1651831583" class="author"></image>
+    <text class="author-text">by qxr</text>
+</view>

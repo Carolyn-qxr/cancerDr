@@ -1,0 +1,178 @@
+/* pages/selfDetect/selfDect.wxss */
+.title{
+    position: absolute;
+    background-image: linear-gradient(45deg, #9bd1d0 0%, #41dd8a 100%);
+    width: 100%;
+    height: 11%;
+}
+.titleText{
+    position: absolute;
+    margin-top:46px;
+    left:50px;
+    color: white;
+    font-size: 16.5px;
+    font-weight: 550;
+}
+.home{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: 41px;
+    margin-left: 20px;
+}
+
+.body{
+    position: absolute;
+    background-color:#F5F5F5;
+    width: 100%;
+    margin-top: 80px;
+    height: 1000px;
+    overflow-x: hidden;
+}
+.doctor{
+    width: 24px;
+    height: 26px;
+    position: absolute;
+    margin-left: 31%;
+    margin-top: 6px;
+}
+.text{
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 39%;
+    color: #303133;
+}
+.top-container{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    margin-top: 10%;
+    background-color: white;
+}
+.shuxian{
+    position: absolute;
+    width: 5px;
+    height: 25px;
+    margin-left: 5%;
+    margin-top: 3%;
+    background-color: #7ce4ac;
+}
+.line{
+    position: absolute;
+    width: 90%;
+    height: 3.5rpx;
+    background-color: #d0d3da;
+    margin-top: 12%;
+    margin-left: 5%;
+}
+.title-text{
+    position: absolute;
+    left: 11%;
+    font-size: 17px;
+    margin-top: 3.5%;
+    font-weight: 600;
+    color: #434344;
+}
+.info-container-top{
+    position: absolute;
+    width: 90%;
+    height: 250px;
+    left: 5%;
+    margin-top: 13%;
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    width: 100%;
+    height: 44px;
+    margin-top: 7px;
+    display: flex;
+}
+.icon1{
+    position: absolute;width: 30px;height: 25px;
+}
+.icon2{
+    position: absolute;width: 22px;height: 25px;left: 3px;
+}
+.icon3{
+    position: absolute;width: 22px;height: 22px;left: 3px;margin-top: 1.5px;
+}
+.icon4{
+    position: absolute;width: 22px;height: 22px;left: 3px;margin-top: 1px;
+}
+.icon5{
+    position: absolute;width: 22px;height: 22px;left: 3px;margin-top: 1.5px;
+}
+.left-text{
+    position: absolute;left: 35px;margin-top: 2px;color: #303133;
+}
+.right-text{
+    position: absolute;right:10px;margin-top: 2px;
+}
+.right-input{
+    position: absolute;right:10px;margin-top: 2px;text-align: right;
+}
+.bottom-container{
+    position: absolute;
+    width: 100%;
+    height: 490px;
+    margin-top:350px;
+    background-color: white;
+}
+.bottom-title1{
+    position: absolute;left: 6%;top: 55px;
+}
+.bottom-title2{
+  position: absolute;left: 6%;top: 165px
+}
+.danxuan{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 23%;
+  left: 5%;
+}
+.line1{
+  position: absolute;
+  width: 90%;
+  height: 3.5rpx;
+  background-color: #d0d3da;
+  margin-top: 41%;
+  margin-left: 5%;
+}
+.duoxuan{
+  position: absolute;
+  margin-top: 50%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.btn{
+  position: absolute;
+  width: 88%;
+  height: 32px;
+  margin-top: 860px;
+  background-color: #71e7a8;
+  border-radius: 30px;
+  left: 20px;
+  color: white;
+  font-size: 17px;
+  padding-top: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+.author{
+  position: absolute;
+  margin-top: 950px;
+  margin-left: 140px;
+  width: 20px;
+  height: 20px;
+}
+
+.author-text{
+  position: absolute;
+  margin-top: 950px;
+  margin-left: 170px;
+  font-style: italic;
+  color: #303133;
+}

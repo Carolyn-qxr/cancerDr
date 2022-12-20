@@ -1,0 +1,181 @@
+.back{
+    background-image: linear-gradient(45deg, #d4d9e4 0%, #98ddb8 100%);
+    height: 240px;
+}
+.title{
+    position: absolute;
+    top:46px;
+    left:20px;
+    color: white;
+    font-size: 16.5px;
+    font-weight: 550;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.home{
+    position: absolute;
+    top: 43px;
+    left: 28px;
+    width: 22px;
+    height: 22px;
+    border: solid 1px white;
+    border-radius: 50%;
+}
+.touxiang{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 7px;
+    margin-left: 30px;
+}
+.username{
+    position:absolute;
+    margin-top: 18px;
+    margin-left: 90px;
+    font-size: 17px;
+    color: #303133;
+}
+.getTel{
+    position: absolute;
+    width:30px;
+    height: 30px;
+    margin-left: 215px;
+    margin-top: 15px;
+    border-radius: 40px;
+    color: white;
+    background-color: #7fdaa9;
+}
+.userInfo{
+    background-color: white;
+    height: 60px;
+    width:90%;
+    margin-left: 5%;
+    border-radius: 100px;
+    margin-top: 15px;
+    box-shadow: 0px 1px 3px rgba(34, 25, 25, 0.3);
+    display: flex;
+    
+
+}
+.body{
+    position:absolute;
+    background-color: #F5F5F5;
+    height: 600px;
+    width: 380px;
+ 
+}
+.body-text{
+    position: absolute;
+    color: #303133;
+    margin-top: 30px;
+    margin-left: -90px;
+    text-indent: 2em;
+    /* text-indent是用来设定文本块中第一行的缩进。所有浏览器都支持 text-indent 属性。 */
+}
+.body-image{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.body-top{
+    position: absolute;
+    width: 90%;
+    height: 280px;
+    background-color: white;
+    margin-left: 2.5%;
+    margin-top: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    /* //该属性设置超出时自动换行 */
+}
+.body-item{
+    width: 160px;
+    height: 130px;
+    margin-left: 7px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #e3e8f3 0%, #bff1d7 100%);
+    text-align: center;
+}
+.cancer-check{
+    width: 90%;
+    height: 100px;
+    background-image: linear-gradient(45deg, #edf1fa 0%, #caebda 100%);
+    margin-left: 5%;
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.history{
+    width: 90%;
+    height: 100px;
+    background-image: linear-gradient(45deg, #edf1fa 0%, #caebda 100%);
+    margin-left: 5%;
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.scrolltxt{
+    width: 77%;
+    margin-left: 15%;
+    margin-top: 27%;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: snow;
+    
+  }
+  .marquee_box {
+    position:relative;
+    color:white;
+    height:90rpx;
+    display:block;overflow:hidden;
+  } 
+  .marquee_text {
+    white-space: nowrap;
+    position:absolute;
+    top: 5px;
+    font-size:15px;
+    
+    height:90rpx;
+    
+  
+  }
+  /* 轮播图css */
+.carousel{
+    background-color: white;
+    margin-top: 85%;
+    width: 90%;
+    margin-left: 2.5%;
+    height: 190px;
+    border-radius: 10px;
+    
+}
+.swiper{
+    position: absolute;
+    width: 90%;
+    height: 60%;
+}
+.slide-image{
+    height: 190px;
+    width: 100%;
+    border-radius: 10px;
+}
+.author{
+    position: absolute;
+    margin-top: 145%;
+    margin-left: 140px;
+    width: 20px;
+    height: 20px;
+}
+
+.author-text{
+    position: absolute;
+    margin-top: 145%;
+    margin-left: 170px;
+    font-style: italic;
+    color: #303133;
+}

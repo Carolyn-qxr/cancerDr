@@ -1,0 +1,53 @@
+<view class="title">
+    <image src="{{homeSrc}}" class="home" bindtap="toHome"></image>
+<text class="title-text">个人信息</text>
+<image src="{{avatar}}" class="avatar"></image>
+<text class="nickname">{{nickName}}</text>
+</view>
+<view class="body">
+    <image class="doctor" src="{{doctorSrc}}"></image>
+    <text class="text">您的健康医生</text>
+    <view class="container">
+        <view class="bigContainer">
+            <view class="info">
+                <view class="info-text">姓名</view>
+                <view class="right-text">{{username}}</view>
+                <view class="line"></view>
+            </view>
+            <view class="info">
+                <view class="info-text">身份证号</view>
+                <view class="right-text">{{userID}}</view>
+                <view class="line"></view>
+            </view>
+            <view class="info">
+                <view class="info-text">性别</view>
+                <view class="right-text">
+                    <view hidden="{{gender==1}}">
+                        <image src="{{maleUrl}}" class="genderUrl"></image>
+                    </view>
+                    <view hidden="{{!gender==1}}">
+                        <image src="{{femaleUrl}}" class="genderUrl"></image>
+                    </view>
+                </view>
+                <view class="line"></view>
+            </view>
+            <view class="info">
+                <view class="info-text">城市</view>
+                <view class="right-text">{{userCity}}
+                </view>
+                <view class="line"></view>
+            </view>
+            <view class="info">
+                <view class="info-text">手机号码</view>
+                <view class="right-text">{{userTel}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="change">
+        <text class="change-text">修改个人信息</text>
+        <image src="{{rightUrl}}" class="before" bindtap="toChange"></image>
+    </view>
+    <view class="btn" bindtap="loginOut">退出登录</view>
+</view>
+<image src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E4%BD%9C%E8%80%85.png?sign=f9abeb4f95d142a4725bb4edd10ad643&t=1651831583" class="author"></image>
+<text class="author-text">by qxr</text>

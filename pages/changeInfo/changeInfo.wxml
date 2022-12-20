@@ -1,0 +1,51 @@
+<view class="title">
+    <image src="{{homeSrc}}" class="home" bindtap="before"></image>
+<text class="title-text">癌症检测服务</text>
+</view>
+<view class="body">
+    <image class="doctor" src="{{doctorSrc}}"></image>
+    <text class="text">您的健康医生</text>
+    <view class="container">
+        <view class="bigContainer">
+            <view class="info">
+                <view class="info-text">姓名</view>
+                <input placeholder="请输入姓名" class="input" hidden="{{hasInfo}}" bindinput="addName"></input>
+                <view class="right-text" hidden="{{!hasInfo}}">{{name}}</view>
+                <view class="line"></view>
+            </view>
+            <view class="info">
+                <view class="info-text">身份证号</view>
+                <input placeholder="请输入身份证号" class="input" hidden="{{hasInfo}}" bindinput="addID"></input>
+                <view class="right-text" hidden="{{!hasInfo}}">{{ID}}</view>
+                <view class="line"></view>
+            </view>
+            <view class="info">
+                <view class="info-text">性别</view>
+                <view hidden="{{hasInfo}}">
+                    <picker bindchange="bindPickerChange" value="{{index}}"  range="{{array}}" class="right-text"> 
+                    {{gender}}
+                    </picker>
+                </view>
+                <view class="right-text" hidden="{{!hasInfo}}">{{gender}}</view>
+                <view class="line"></view>
+            </view>
+            <view class="info">
+                <view class="info-text">城市</view>
+                <view>
+                    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" class="right-text">
+                    {{city}}
+                    </picker>
+                </view>
+            </view>
+            <view class="info">
+                <view class="info-text">手机号码</view>
+                <input placeholder="请输入手机号码" class="input" hidden="{{hasTel}}" bindinput="addTel"></input>
+                <view class="tel" hidden="{{!hasTel}}">{{tel}}</view>
+                <image class="changeUrl" src="{{editUrl}}" hidden="{{!hasTel}}" bindtap="edit"></image>
+            </view>
+        </view>
+    </view>
+    <view class="btn" bindtap="save">立即修改</view>
+</view>
+  <image src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E4%BD%9C%E8%80%85.png?sign=f9abeb4f95d142a4725bb4edd10ad643&t=1651831583" class="author"></image>
+    <text class="author-text">by qxr</text>
